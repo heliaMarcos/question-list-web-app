@@ -1,0 +1,15 @@
+<h3>{{item.id}}. {{item.question}}</h3>
+<table class="table">
+<tr ng-repeat="choice in item.choices">
+  <td>{{choice.choice}}</td>
+  <td>{{choice.votes}}</td>
+  <td><input type="radio" name="choice" value="{{choice.choices}}"/></td>
+</tr>
+</table>
+<table class="table">
+<tr>
+  <td style="border-top: 0px solid #fff"><a href="/">Back</a></td>
+<td class="search-box" style="border-top: 0px solid #fff"><input type="button" value="Share" id="share-btn-{{item.id}}" class="share-btn btn"></input>
+<input type="submit" value="Vote" class="search-btn btn"></input></td>
+</tr>
+</table>

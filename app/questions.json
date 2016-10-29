@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Favourite color?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "blue",
+        "votes": 2048
+      },
+      {
+        "choice": "green",
+        "votes": 1024
+      },
+      {
+        "choice": "black",
+        "votes": 512
+      },
+      {
+        "choice": "blue",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Favourite food?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "chocolate",
+        "votes": 2048
+      },
+      {
+        "choice": "banana",
+        "votes": 1024
+      },
+      {
+        "choice": "pasta",
+        "votes": 512
+      },
+      {
+        "choice": "rice",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Favourite country?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "iceland",
+        "votes": 2048
+      },
+      {
+        "choice": "norge",
+        "votes": 1024
+      },
+      {
+        "choice": "sweden",
+        "votes": 512
+      },
+      {
+        "choice": "denmark",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Favourite programming language?",
+    "image_url": "https://dummyimage.com/600x400/000/fff.png&text=question+1+image+(600x400)",
+    "thumb_url": "https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)",
+    "published_at": "2015-08-05T08:40:51.620Z",
+    "choices": [
+      {
+        "choice": "Swift",
+        "votes": 2048
+      },
+      {
+        "choice": "Python",
+        "votes": 1024
+      },
+      {
+        "choice": "Objective-C",
+        "votes": 512
+      },
+      {
+        "choice": "Ruby",
+        "votes": 256
+      }
+    ]
+  }
+]

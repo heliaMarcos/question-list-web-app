@@ -1,0 +1,104 @@
+/** Palette **
+green: #9cc670
+yellow: #f0c741
+*************/
+
+body {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+h3 {
+  color: #f0c741;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.5;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+.table .next-link{
+  display: inline-flex;
+  color: #f0c741;
+  text-align: center;
+  text-decoration: none;
+}
+.table .next-link:hover {
+  border-bottom: 2px solid #f0c741;
+  padding-bottom: 1.5px;
+}
+.btn {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 4px 8px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.share-btn{
+  background-color: #9cc670;
+}
+.search-box {
+  float: right;
+}
+.search-btn {
+  background-color: #f0c741;
+}
+.input-box{
+  margin-bottom: 0;
+  padding: 4px 8px;
+  width: 200px;
+}
+.loading-text {
+  display: none;
+  opacity: 0
+}
+.is-loading {
+  display: block;
+  font-size: 18px;
+  margin-top: 150px;
+  opacity: 1;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .search-box {
+    float: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .input-box {
+    width: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

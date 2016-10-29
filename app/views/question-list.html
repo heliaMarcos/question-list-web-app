@@ -1,0 +1,18 @@
+<table class="search-box">
+    <tr>
+        <td><input ng-model="query" type="text" class="input-box" placeholder="Enter your search here" /></td>
+        <td><button ng-model="query" class="search-btn btn">Search</button></td>
+        <td><a href="/">Reset</a></td>
+    </tr>
+</table>
+    <table class="table">
+        <tr>
+            <h3>Questions</h3>
+        </tr>
+        <tr ng-repeat="question in questions | filter:query">
+            <td>{{question.id}}</td>
+            <td><a href="#/{{question.id}}">{{question.question}}</a></td>
+            <td>{{question.published_at | date:'medium' }}</td>
+            <td><button type="button" id="share-btn-{{question.id}}" class="share-btn btn">Share</button></td>
+        </tr>
+    </table>
