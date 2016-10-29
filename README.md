@@ -1,4 +1,4 @@
-# Bliss Recruitment App — the seed for AngularJS apps
+# Bliss Recruitment App — a poll web app
 
 This project was done as a test for the Bliss recruitment process.
 
