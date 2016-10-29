@@ -2,7 +2,7 @@
     <tr>
         <td><input ng-model="query" type="text" class="input-box" placeholder="Enter your search here" /></td>
         <td><button ng-model="query" class="search-btn btn">Search</button></td>
-        <td><a href="/">Reset</a></td>
+        <td><a ng-click="query = ''" style="font-size:12px">Reset</a></td>
     </tr>
 </table>
     <table class="table">
@@ -11,8 +11,12 @@
         </tr>
         <tr ng-repeat="question in questions | filter:query">
             <td>{{question.id}}</td>
-            <td><a href="#/{{question.id}}">{{question.question}}</a></td>
+            <td><a href="#/questions/{{question.id}}">{{question.question}}</a></td>
             <td>{{question.published_at | date:'medium' }}</td>
-            <td><button type="button" id="share-btn-{{question.id}}" class="share-btn btn">Share</button></td>
+            <td><button href="share/{{question.id}}" class="share-btn btn">Share</button></td>
         </tr>
     </table>
+    <div ng-show="loading" class="loading-text"><img src='img/loading.svg'/><p>Loading</p></div>
+    <div>
+      <a ng-click="next()" class="next-link">Next</a>
+    </div>

@@ -8,7 +8,7 @@ To get started, clone this repository and install the dependencies.
 
 ```
 git clone git@github.com:heliaMarcos/question-list-web-app.git
-cd question-web-app
+cd question-list-web-app
 ```
 
 You must have node.js and its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).

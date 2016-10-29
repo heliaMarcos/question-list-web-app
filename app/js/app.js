@@ -1,66 +1,48 @@
 'use strict';
 
-var surveyMeApp = angular.module('surveyMeApp', [
-  'ngRoute',
-  'surveyMeControllers',
-  'ngMaterial',
-  'ngAnimate'
-]);
+var questionListApp = angular.module('questionListApp', ['ngRoute']);
 
-surveyMeApp.config(function($routeProvider, $locationProvider) {
-
-    $routeProvider
-      .when('/', {
-          templateUrl : 'views/loading.html',
-          controller : 'loadingControl'
-      })
-      .when('/questions', {
-        templateUrl: 'views/questions-list.html',
-        controller: 'questionsControl'
-      })
-      .when('/questions/:questionId', {
-        templateUrl: 'views/questions-detail.html',
-        controller: 'questionDetailControl'
-      })
-      .when('/share/:questionId', {
+questionListApp.config(function($routeProvider) {
+    $routeProvider.
+    when('/questions', {
+        templateUrl: 'views/question-list.html',
+        controller: 'QuestionCtrl'
+    }).
+    when('/questions/:questionId', {
+        templateUrl: 'views/question-detail.html',
+        controller: 'QuestionDetailCtrl'
+    }).
+    when('share/:questionId', {
         templateUrl: 'views/share.html',
-        controller: 'shareScreenControl'
-      })
-      .when('/no-internet', {
-        templateUrl: 'views/no-internet.html',
-        controller: 'noInternetControl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      })
-      $locationProvider.html5Mode(true);
-
-  });
-
-surveyMeApp.run(function($window, $rootScope) {
-    $rootScope.online = navigator.onLine;
-    $window.addEventListener("offline", function() {
-      $rootScope.$apply(function() {
-        $rootScope.online = false;
-      });
-    }, false);
-
-    $window.addEventListener("online", function() {
-      $rootScope.$apply(function() {
-        $rootScope.online = true;
-      });
-    }, false);
+        controller: 'ShareScreenCtrl'
+    }).
+    otherwise({
+        redirectTo: '/questions'
+    });
 });
 
-surveyMeApp.run(function ($rootScope, $location) {
-
-    var history = [];
-    $rootScope.$on('$routeChangeSuccess', function() {
-        history.push($location.$$path);
-    });
-    $rootScope.back = function () {
-        var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
-        $location.path(prevUrl);
+questionListApp.factory('questions', function($http) {
+    return {
+        list: function(callback) {
+            $http.get('questions.json').success(callback);
+        },
+        find: function(questionId, callback) {
+            $http.get('questions.json').success(function(data) {
+                var index = parseInt(questionId) - 1;
+                callback(data[index]);
+            });
+        }
     };
+});
 
+questionListApp.controller('QuestionCtrl', function($scope, questions) {
+    questions.list(function(questions) {
+        $scope.questions = questions;
+    });
+});
+
+questionListApp.controller('QuestionDetailCtrl', function($scope, $routeParams, questions) {
+    questions.find($routeParams.questionId, function(item) {
+        $scope.item = item;
+    });
 });
