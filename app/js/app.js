@@ -1,6 +1,6 @@
 'use strict';
 
-var questionListApp = angular.module('questionListApp', ['ngRoute']);
+var questionListApp = angular.module('questionListApp', ['ngRoute', 'ngAnimate']);
 
 questionListApp.config(function($routeProvider) {
     $routeProvider.
@@ -24,10 +24,10 @@ questionListApp.config(function($routeProvider) {
 questionListApp.factory('questions', function($http) {
     return {
         list: function(callback) {
-            $http.get('questions.json').success(callback);
+            $http.get('https://private-274c8-blissrecruitmentapi.apiary-mock.com/questions?10').success(callback);
         },
         find: function(questionId, callback) {
-            $http.get('questions.json').success(function(data) {
+            $http.get('https://private-274c8-blissrecruitmentapi.apiary-mock.com/questions').success(function(data) {
                 var index = parseInt(questionId) - 1;
                 callback(data[index]);
             });
