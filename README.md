@@ -5,7 +5,7 @@ A poll web app
 To get started, clone this repository and install the dependencies.
 
 ```
-git clone git@github.com:heliaMarcos/question-list-web-app.git
+git clone https://github.com/heliaMarcos/question-list-web-app.git
 cd question-list-web-app
 ```
 
