@@ -1,6 +1,4 @@
-# Bliss Recruitment App — a poll web app
-
-This project was done as a test for the Bliss recruitment process.
+A poll web app
 
 ## Getting Started
 
